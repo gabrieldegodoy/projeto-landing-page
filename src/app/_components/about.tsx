@@ -9,7 +9,7 @@ export default function About() {
     <section className="bg-[#FDF6EC] py-16">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative">
+          <div className="relative" data-aos="fade-up-right" data-aos-delay="300">
             <div className="relative w-full h-[400] rounded-3xl overflow-hidden">
             <Image
               src={about1Img}
@@ -32,7 +32,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="space-y-6 mt-10">
+          <div className="space-y-6 mt-10" data-aos="fade-up-left" data-aos-delay="300">
             <h2 className="text-4xl font-bold">SOBRE</h2>
 
             <p>Until one has loved an animal, a part of ones soul remains unawakened. We believe in it and we believe in easy access to things that are good for our mind, body and spirit. With a clever offering, superb support and a secure checkout youre in good hands.</p>
@@ -54,7 +54,8 @@ export default function About() {
 
             <div className="flex gap-4">
               <a
-                href="#"
+                target="_blank"
+                href={`https://wa.me/5511999999999?text=Olá vim pelo site e gostaria de mais informações`}
                 className="bg-[#E84C3D] px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2 text-white"
               >
                 <WhatsappLogoIcon className="w-5 h-5" />
